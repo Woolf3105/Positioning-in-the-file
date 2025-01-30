@@ -1,14 +1,4 @@
 def custom_write(file_name, strings):
-    """
-    Writes strings to a file and returns a dictionary with the position details.
-
-    Args:
-        file_name (str): Name of the file to write to.
-        strings (list): List of strings to write to the file.
-
-    Returns:
-        dict: A dictionary where keys are tuples (line_number, byte_offset) and values are the written strings.
-    """
     strings_positions = {}
 
     with open(file_name, 'w', encoding='utf-8') as file:
